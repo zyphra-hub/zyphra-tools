@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+rich
+colorama
+dnspython
+whois
+python-whois
+mechanize
+urllib3
+PySocks
