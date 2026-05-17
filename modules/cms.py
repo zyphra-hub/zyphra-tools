@@ -1,0 +1,22 @@
+DESCRIPTION = "CMS + technology detector"
+def run():
+    import time
+    print("\n  ┌─ CMS DETECTOR\n")
+    target = input("  │ Target URL: ")
+    print(f"\n  │ [*] Detecting CMS... ", end="")
+    time.sleep(1.5)
+    print(f"WordPress v5.9.3")
+    print(f"  │ [*] Detecting theme... ", end="")
+    time.sleep(0.7)
+    print(f"twentytwentythree")
+    print(f"  │ [*] Detecting plugins... ", end="")
+    time.sleep(1)
+    print(f"woocommerce, yoast-seo, akismet")
+    print(f"  │ [*] Detecting server... ", end="")
+    time.sleep(0.5)
+    print(f"Apache/2.4.41 (Ubuntu)")
+    print(f"  │ [*] Detecting PHP... ", end="")
+    time.sleep(0.5)
+    print(f"PHP 7.4.33")
+    print(f"  │ [✓] Done.")
+    print(f"  │ [!] This is a simulation. Real detection may vary.\n")
