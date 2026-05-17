@@ -1,6 +1,10 @@
 # Zyphra Tools v2.0 (beta)
 
-> Multi Utility Bot for Termux / Linux
+> Multi Utility Framework for Termux & Linux
+
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Platform](https://img.shields.io/badge/Platform-Termux%20%7C%20Linux-green)
+![Status](https://img.shields.io/badge/Status-Beta-red)
 
 ---
 
@@ -14,8 +18,9 @@
 
 | Category | Commands |
 |----------|----------|
-| **ATTACK** | `/ddos` `/deface` `/sql` `/xss` `/brute` `/phish` `/spam` |
-| **RECON** | `/ipinfo` `/whois` `/dns` `/subdomain` `/port` `/cms` |
+| **NETWORK** | `/ddos` `/port` `/dns` |
+| **RECON** | `/ipinfo` `/whois` `/subdomain` `/cms` |
+| **WEB** | `/sql` `/xss` |
 | **SYSTEM** | `/menu` `/help` `/clear` `/exit` |
 
 ---
@@ -27,33 +32,25 @@
 ```bash
 pkg update -y && pkg upgrade -y
 
-pkg install git python -y
+pkg install git -y
 
 git clone https://github.com/zyphra-hub/zyphra-tools
 
 cd zyphra-tools
 
 bash install.sh
-
-python zyphra.py
 ```
 
 ### Linux
 
 ```bash
-sudo apt update && sudo apt upgrade -y
-
-sudo apt install git python3 python3-pip -y
+sudo apt install git -y
 
 git clone https://github.com/zyphra-hub/zyphra-tools
 
 cd zyphra-tools
 
-chmod +x install.sh
-
 bash install.sh
-
-python3 zyphra.py
 ```
 
 ---
@@ -63,32 +60,28 @@ python3 zyphra.py
 | Command | Description |
 |---------|-------------|
 | `/menu` | Show all commands |
-| `/ddos` | UDP Flood simulation with proxy rotation |
-| `/deface` | Mass upload simulation |
-| `/sql` | SQL injection payload tester |
+| `/ddos` | Network stress test simulation |
+| `/sql` | SQL payload tester |
 | `/xss` | XSS scanner |
-| `/brute` | Login brute force simulator |
-| `/phish` | Phishing page template generator |
-| `/spam` | OTP spam simulation |
 | `/ipinfo` | IP geolocation lookup |
 | `/whois` | WHOIS domain lookup |
 | `/dns` | DNS enumeration |
 | `/subdomain` | Subdomain finder |
-| `/port` | Port scanner |
+| `/port` | TCP port scanner |
 | `/cms` | CMS & technology detector |
-| `/help` | Contact support |
+| `/help` | Show help menu |
 | `/clear` | Clear terminal |
-| `/exit` | Exit bot |
+| `/exit` | Exit framework |
 
 ---
 
 ## ⚠ Disclaimer
 
-This project is made for educational and research purposes only.
+This project is created for educational and research purposes only.
 
-The developer is not responsible for any misuse or illegal activities performed using this tool.
+Do not use this framework on systems or networks without authorization.
 
-Use responsibly and only on systems you own or have permission to test.
+The developer is not responsible for misuse or illegal activity.
 
 ---
 
