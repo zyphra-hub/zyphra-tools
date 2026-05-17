@@ -27,13 +27,9 @@
 
 ## 📦 Installation
 
-### Termux
+### Termux / Linux / macOS
 
 ```bash
-pkg update -y && pkg upgrade -y
-
-pkg install git -y
-
 git clone https://github.com/zyphra-hub/zyphra-tools
 
 cd zyphra-tools
@@ -41,16 +37,23 @@ cd zyphra-tools
 bash install.sh
 ```
 
-### Linux
+The installer will automatically:
+- Detect your operating system
+- Install Python & dependencies
+- Configure the environment
+
+---
+
+## ⚡ Run
 
 ```bash
-sudo apt install git -y
+python zyphra.py
+```
 
-git clone https://github.com/zyphra-hub/zyphra-tools
+Linux/macOS users may need:
 
-cd zyphra-tools
-
-bash install.sh
+```bash
+python3 zyphra.py
 ```
 
 ---
