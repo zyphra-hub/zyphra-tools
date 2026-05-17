@@ -22,10 +22,11 @@ BANNER = f"""
 BOX = f"""
 {R}╔══════════════════════════════════════════════════╗
 ║         ZYPHRA TOOLS v1.0 - ATTACKER BOT        ║
+║          "Silent, Fast, No Mercy"               ║
 ╠══════════════════════════════════════════════════╣
 ║  AUTHOR   : ndrael                              ║
 ║  TYPE     : Multi-Attack Bot                    ║
-║  MODULES  : 22 loaded                           ║
+║  MODULES  : 17 loaded                           ║
 ║  STATUS   : Ready                               ║
 ╚══════════════════════════════════════════════════╝{N}
 """
@@ -50,25 +51,21 @@ def show_help(modules):
     print(f"\n{Y}[ COMMAND LIST ]{N}\n")
     attack_cmds = {
         "/ddos": "Serangan DoS ke target",
-        "/spam": "Spam SMS/WA/Call",
-        "/phish": "Generate halaman phising",
-        "/deface": "Mass deface situs vuln",
-        "/brute": "Brute force login",
-        "/dork": "Google dorking",
-        "/sql": "SQL injection scanner",
+        "/dork": "Google dorking scraper",
+        "/sql": "SQL injection exploit",
         "/xss": "XSS scanner & inject",
+        "/deface": "Mass deface upload",
         "/port": "Port scanner cepat",
+        "/payload": "Generate backdoor",
+        "/hashcrack": "Crack hash (MD5/SHA1/SHA256/SHA512)",
+        "/webcrawler": "Crawling situs target",
         "/ipinfo": "Info lengkap IP target",
         "/whois": "WHOIS lookup domain",
         "/dnslookup": "DNS enumeration",
-        "/subdomain": "Cari subdomain",
+        "/subdomain": "Cari subdomain tersembunyi",
         "/cmsdetect": "Deteksi CMS target",
         "/adminer": "Cari admin page",
         "/reverseip": "Reverse IP lookup",
-        "/webcrawler": "Crawling situs",
-        "/bomber": "Email bomber massal",
-        "/hashcrack": "Crack hash",
-        "/payload": "Generate backdoor",
         "/info": "Info sistem",
     }
     sys_cmds = {
