@@ -20,22 +20,6 @@
 
 ---
 
-## 📦 Installation (Termux)
-
-```bash
-pkg update -y && pkg upgrade -y
-
-pkg install git python -y
-
-git clone https://github.com/zyphra-hub/zyphra-tools
-
-cd zyphra-tools
-
-bash install.sh
-
-python zyphra.py
-```
-
 ## 📦 Installation
 
 ### Termux
