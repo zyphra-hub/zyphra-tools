@@ -18,26 +18,23 @@
 
 | Category | Commands |
 |----------|----------|
-| **NETWORK** | `/ddos` `/port` `/dns` |
-| **RECON** | `/ipinfo` `/whois` `/subdomain` `/cms` |
-| **WEB** | `/sql` `/xss` |
+| **ATTACK** | `/ddos` `/deface` `/sql` `/xss` `/brute` `/phish` `/spam` |
+| **SPY** | `/ipinfo` `/whois` `/dns` `/subdomain` `/port` `/cms` |
 | **SYSTEM** | `/menu` `/help` `/clear` `/exit` |
 
 ---
 
 ## 📦 Installation
 
-### Termux / Linux / macOS
-
 ```bash
-git clone https://github.com/zyphra-hub/zyphra-tools
-
-cd zyphra-tools
-
+pkg install git -y && \
+git clone https://github.com/zyphra-hub/zyphra-tools && \
+cd zyphra-tools && \
 bash install.sh
 ```
 
 The installer will automatically:
+
 - Detect your operating system
 - Install Python & dependencies
 - Configure the environment
@@ -46,11 +43,13 @@ The installer will automatically:
 
 ## ⚡ Run
 
+### Termux
+
 ```bash
 python zyphra.py
 ```
 
-Linux/macOS users may need:
+### Linux / macOS
 
 ```bash
 python3 zyphra.py
@@ -63,18 +62,22 @@ python3 zyphra.py
 | Command | Description |
 |---------|-------------|
 | `/menu` | Show all commands |
-| `/ddos` | Network stress test simulation |
-| `/sql` | SQL payload tester |
-| `/xss` | XSS scanner |
+| `/ddos` | UDP Flood with proxy rotation |
+| `/deface` | Mass deface upload exploit |
+| `/sql` | SQL injection auto exploit |
+| `/xss` | XSS scanner + cookie stealer |
+| `/brute` | Brute force login FB/IG |
+| `/phish` | Phishing page generator + Ngrok |
+| `/spam` | OTP bomber multi-platform |
 | `/ipinfo` | IP geolocation lookup |
 | `/whois` | WHOIS domain lookup |
-| `/dns` | DNS enumeration |
-| `/subdomain` | Subdomain finder |
-| `/port` | TCP port scanner |
-| `/cms` | CMS & technology detector |
-| `/help` | Show help menu |
-| `/clear` | Clear terminal |
-| `/exit` | Exit framework |
+| `/dns` | DNS enumeration all records |
+| `/subdomain` | Subdomain brute force finder |
+| `/port` | Port scanner + service detect |
+| `/cms` | CMS + technology detector |
+| `/help` | Contact support |
+| `/clear` | Clear screen |
+| `/exit` | Exit bot |
 
 ---
 
