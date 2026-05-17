@@ -36,6 +36,42 @@ bash install.sh
 python zyphra.py
 ```
 
+## 📦 Installation
+
+### Termux
+
+```bash
+pkg update -y && pkg upgrade -y
+
+pkg install git python -y
+
+git clone https://github.com/zyphra-hub/zyphra-tools
+
+cd zyphra-tools
+
+bash install.sh
+
+python zyphra.py
+```
+
+### Linux
+
+```bash
+sudo apt update && sudo apt upgrade -y
+
+sudo apt install git python3 python3-pip -y
+
+git clone https://github.com/zyphra-hub/zyphra-tools
+
+cd zyphra-tools
+
+chmod +x install.sh
+
+bash install.sh
+
+python3 zyphra.py
+```
+
 ---
 
 ## ⚡ Usage
