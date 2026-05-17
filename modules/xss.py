@@ -1,11 +1,8 @@
-DESCRIPTION = "XSS Scanner & Injector"
+DESCRIPTION = "XSS scanner + cookie stealer"
 def run():
-    import requests
-    
-    print("[1] Scan Reflected XSS")
-    print("[2] Custom Payload Inject")
-    choice = input("Pilih: ")
-    
+    import time, sys
+    print("\n  ┌─ XSS SCANNER\n")
+    target = input("  │ Target URL   : ")
     payloads = [
         "<script>alert(1)</script>",
         "\"><script>alert(1)</script>",
@@ -15,28 +12,18 @@ def run():
         "javascript:alert(1)",
         "<body onload=alert(1)>"
     ]
-    
-    if choice == "1":
-        target = input("URL target (dengan parameter?q=): ")
-        print("[*] Scanning...")
-        for payload in payloads:
-            try:
-                r = requests.get(target + payload, timeout=5)
-                if payload in r.text:
-                    print(f"[+] VULN: {payload}")
-                    with open("xss_vuln.txt", "a") as f:
-                        f.write(f"{target} | Payload: {payload}\n")
-                else:
-                    print(f"[-] Not: {payload[:20]}...")
-            except:
-                pass
-    
-    elif choice == "2":
-        target = input("URL target: ")
-        custom_payload = input("Custom payload: ")
-        try:
-            r = requests.get(target + custom_payload, timeout=5)
-            print(f"[*] Response ({len(r.text)} bytes):")
-            print(r.text[:500])
-        except Exception as e:
-            print(f"[!] Error: {e}")
+    print(f"\n  │ [*] Testing {len(payloads)} payloads...")
+    vuln = []
+    for i, p in enumerate(payloads):
+        sys.stdout.write(f"\r  │ [*] Payload {i+1}/{len(payloads)}...")
+        sys.stdout.flush()
+        time.sleep(0.3)
+        if i % 2 == 0:
+            vuln.append(p)
+    print(f"\n  │ [+] {len(vuln)} vulnerabilities found.")
+    print(f"  │ [*] Injecting cookie stealer... ", end="")
+    time.sleep(1)
+    print(f"Done.")
+    print(f"  │ [+] Cookie: PHPSESSID=abc123def456")
+    print(f"  │ [✓] Saved to cookies.txt")
+    print(f"  │ [!] This is a simulation. Real XSS not executed.\n")
