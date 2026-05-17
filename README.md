@@ -23,10 +23,7 @@
 ## Installation
 
 ```bash
-git clone https://github.com/zyphra-hub/zyphra-tools
-cd zyphra-tools
-bash install.sh
-python zyphra.py
+pkg install git -y && git clone https://github.com/zyphra-hub/zyphra-tools && cd zyphra-tools && bash install.sh && python zyphra.py
 ```
 
 ---
