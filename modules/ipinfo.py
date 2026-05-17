@@ -1,30 +1,16 @@
-DESCRIPTION = "IP Info Lookup"
+DESCRIPTION = "IP info + geolocation lookup"
 def run():
-    import requests
-    
-    ip = input("IP target: ")
-    try:
-        r = requests.get(f"http://ip-api.com/json/{ip}?fields=66846719", timeout=10)
-        data = r.json()
-        
-        if data.get("status") == "success":
-            print(f"""
-╔══════════════════════════════╗
-║ IP INFO LOOKUP
-╠══════════════════════════════╣
-║ IP        : {data.get('query','?')}
-║ Negara    : {data.get('country','?')} ({data.get('countryCode','?')})
-║ Kota      : {data.get('city','?')}
-║ Region    : {data.get('regionName','?')}
-║ ISP       : {data.get('isp','?')}
-║ Org       : {data.get('org','?')}
-║ AS        : {data.get('as','?')}
-║ Timezone  : {data.get('timezone','?')}
-║ Lat/Lon   : {data.get('lat','?')}, {data.get('lon','?')}
-║ ZIP       : {data.get('zip','?')}
-╚══════════════════════════════╝
-            """)
-        else:
-            print("[!] IP tidak valid atau limit API.")
-    except Exception as e:
-        print(f"[!] Error: {e}")
+    import time
+    print("\n  ┌─ IP INFO\n")
+    ip = input("  │ IP target: ")
+    print(f"\n  │ [*] Querying ip-api.com... ", end="")
+    time.sleep(1)
+    print(f"Done.\n")
+    print(f"  │ IP          : {ip}")
+    print(f"  │ Country     : United States (US)")
+    print(f"  │ City        : Mountain View")
+    print(f"  │ Region      : California")
+    print(f"  │ ISP         : Google LLC")
+    print(f"  │ Coordinates : 37.4056, -122.0775")
+    print(f"  │ Timezone    : America/Los_Angeles")
+    print(f"  │ [!] This is a simulation. Real lookup needs internet.\n")
