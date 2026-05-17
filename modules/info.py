@@ -1,18 +1,11 @@
-DESCRIPTION = "System Information"
+DESCRIPTION = "System information"
 def run():
-    import platform, os, socket, sys
-    
+    import platform, os, socket
     print(f"""
-╔══════════════════════════════════╗
-║ SYSTEM INFORMATION
-╠══════════════════════════════════╣
-║ OS        : {platform.system()} {platform.release()}
-║ Kernel    : {platform.version()}
-║ Arch      : {platform.machine()}
-║ Hostname  : {socket.gethostname()}
-║ IP Local  : {socket.gethostbyname(socket.gethostname())}
-║ User      : {os.getlogin()}
-║ Directory : {os.getcwd()}
-║ Python    : {sys.version.split()[0]}
-╚══════════════════════════════════╝
-    """)
+  ┌─ SYSTEM INFO
+  │ OS        : {platform.system()} {platform.release()}
+  │ Arch      : {platform.machine()}
+  │ Hostname  : {socket.gethostname()}
+  │ User      : {os.getlogin()}
+  │ Directory : {os.getcwd()}
+""")
