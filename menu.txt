@@ -1,0 +1,25 @@
+┌─ ATTACK:
+│ /ddos          = UDP Flood + proxy rotation
+│ /dork          = Google dork scraper
+│ /sql           = SQL injection exploit
+│ /xss           = XSS scanner injector
+│ /deface        = Mass deface upload
+│ /port          = Fast port scanner
+│ /payload       = Backdoor generator
+│ /hashcrack     = Hash cracker
+│ /webcrawler    = Web crawler link extractor
+
+┌─ SPY:
+│ /ipinfo        = IP info lookup
+│ /whois         = WHOIS domain lookup
+│ /dnslookup     = DNS enumeration
+│ /subdomain     = Subdomain finder
+│ /cmsdetect     = CMS detector
+│ /adminer       = Admin page finder
+│ /reverseip     = Reverse IP lookup
+
+┌─ SYSTEM:
+│ /menu          = Show command list
+│ /help          = Contact support
+│ /clear         = Clear screen
+│ /exit          = Exit bot
