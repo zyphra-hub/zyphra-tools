@@ -1,69 +1,78 @@
-```markdown
 # Zyphra Tools v2.0 (beta)
 
 > Multi Utility Bot for Termux / Linux
 
 ---
 
-## Author
+## 👤 Author
+
 **ndrael**
 
 ---
 
-## Features
+## ✨ Features
 
 | Category | Commands |
 |----------|----------|
 | **ATTACK** | `/ddos` `/deface` `/sql` `/xss` `/brute` `/phish` `/spam` |
-| **SPY** | `/ipinfo` `/whois` `/dns` `/subdomain` `/port` `/cms` |
+| **RECON** | `/ipinfo` `/whois` `/dns` `/subdomain` `/port` `/cms` |
 | **SYSTEM** | `/menu` `/help` `/clear` `/exit` |
 
 ---
 
-## Installation
+## 📦 Installation (Termux)
 
 ```bash
-pkg install git -y && git clone https://github.com/zyphra-hub/zyphra-tools && cd zyphra-tools && bash install.sh && python zyphra.py
+pkg update -y && pkg upgrade -y
+
+pkg install git python -y
+
+git clone https://github.com/zyphra-hub/zyphra-tools
+
+cd zyphra-tools
+
+bash install.sh
+
+python zyphra.py
 ```
 
 ---
 
-Usage
+## ⚡ Usage
 
-Command Description
-/menu Show all commands
-/ddos UDP Flood with proxy rotation
-/deface Mass deface upload exploit
-/sql SQL injection auto exploit
-/xss XSS scanner + cookie stealer
-/brute Brute force login FB/IG
-/phish Phishing page generator + Ngrok
-/spam OTP bomber multi-platform
-/ipinfo IP geolocation lookup
-/whois WHOIS domain lookup
-/dns DNS enumeration all records
-/subdomain Subdomain brute force finder
-/port Port scanner + service detect
-/cms CMS + technology detector
-/help Contact support
-/clear Clear screen
-/exit Exit bot
-
----
-
-Disclaimer
-
-This tool is for educational purposes only.
-
-Do not use to attack others without permission.
-All actions are the user's responsibility.
+| Command | Description |
+|---------|-------------|
+| `/menu` | Show all commands |
+| `/ddos` | UDP Flood simulation with proxy rotation |
+| `/deface` | Mass upload simulation |
+| `/sql` | SQL injection payload tester |
+| `/xss` | XSS scanner |
+| `/brute` | Login brute force simulator |
+| `/phish` | Phishing page template generator |
+| `/spam` | OTP spam simulation |
+| `/ipinfo` | IP geolocation lookup |
+| `/whois` | WHOIS domain lookup |
+| `/dns` | DNS enumeration |
+| `/subdomain` | Subdomain finder |
+| `/port` | Port scanner |
+| `/cms` | CMS & technology detector |
+| `/help` | Contact support |
+| `/clear` | Clear terminal |
+| `/exit` | Exit bot |
 
 ---
 
-Contact
+## ⚠ Disclaimer
 
-Email: zyphrahub@gmail.com
+This project is made for educational and research purposes only.
 
-GitHub: zyphra-hub/zyphra-tools
+The developer is not responsible for any misuse or illegal activities performed using this tool.
 
-```
+Use responsibly and only on systems you own or have permission to test.
+
+---
+
+## 📬 Contact
+
+- Email: `zyphrahub@gmail.com`
+- GitHub: `zyphra-hub/zyphra-tools`
