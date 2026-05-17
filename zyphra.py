@@ -72,7 +72,7 @@ def show_menu():
 def show_help():
     print(f"""
   {W}Contact support:{N}
-  Email: ndrael@proton.me
+  Email: zyphrahub@gmail.com
 
   atau buat issue di:
   https://github.com/zyphra-hub/zyphra-tools
